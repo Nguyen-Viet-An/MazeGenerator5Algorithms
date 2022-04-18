@@ -32,9 +32,8 @@ function setup() {
   let btn1 = createButton('Recursive Backtracking').parent(myDiv);
   let btn2 = createButton('Binary Tree algorithm').parent(myDiv);
   let btn3 = createButton('Aldous-Broder algorithm').parent(myDiv);
-    let btn4 = createButton('Hunt-and-Kill algorithm').parent(myDiv);
+  let btn4 = createButton('Hunt-and-Kill algorithm').parent(myDiv);
   let btn5 = createButton('Growing Tree algorithm').parent(myDiv);
-
   let btn6 = createButton('Clear').parent(myDiv);
 
 
