@@ -1,0 +1,41 @@
+
+html, body {
+    height: 100%;
+    background-color: #33c4d7;
+}
+
+body {
+    margin: 0;
+    display: flex;
+
+/* This centers our sketch horizontally. */
+    justify-content: center;
+
+/* This centers our sketch vertically. */
+    align-items: center;
+}
+
+canvas {
+  display: block;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  color: #000000;
+  font-family: 'Audiowide';
+  text-align: center;
+  
+}
+
+.buttons {
+  padding: 32px 16px;
+}
