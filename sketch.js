@@ -28,6 +28,7 @@ function setup() {
 
   current = grid[0];
   
+  // Create buttons to swap algorthims
   let myDiv = createDiv().addClass("buttons");
   let btn1 = createButton('Recursive Backtracking').parent(myDiv);
   let btn2 = createButton('Binary Tree algorithm').parent(myDiv);
@@ -78,31 +79,34 @@ function setup() {
   btn6.style('padding: 5px 5px');
   btn6.style('margin-left: 10px');
   btn6.style('margin-right: 10px');
-
+  
+  // Recursive backtracking
   btn1.mousePressed(() => {
     for (let i = 0; i < 600; i++) {
       backtrack();
     }
   });
 
-  // Turn it into 8-slide puzzle
+  // Binary tree
   btn2.mousePressed(() => {
     binarytree();
   });
 
-  // Turn it into 24-slide puzzle
+  // Aldous-Broder
   btn3.mousePressed(() => {
     for (let i = 0; i < 3000; i++) {
       aldousbroder();
     }
   });
   
+  // Hunt-and-kill
   btn4.mousePressed(() => {
     for (let i = 0; i < 1000; i++) {
       huntandkill();
     }
   });
   
+  // Growing tree
     btn5.mousePressed(() => {
     for (let i = 0; i < 1000; i++) {
       cells.push(current);
@@ -110,6 +114,7 @@ function setup() {
     }
   });
   
+  // Clear the grid
   btn6.mousePressed(() => {
     grid.length = 0;
     t = 0;
@@ -134,7 +139,7 @@ function draw() {
   for (var i = 0; i < grid.length; i++) {
     grid[i].show();
   }
-  // To see the step, uncomment each of these functions
+  // To see how the maze is made step-by-step, uncomment each of these functions
   
   // For Recursive Backtracking
   // backtrack();
@@ -276,6 +281,7 @@ function huntandkill() {
   
 }
 
+// Convert 2D to 1D
 function index(i, j) {
   if (i < 0 || j < 0 || i > cols - 1 || j > rows - 1) {
     return -1;
@@ -283,9 +289,8 @@ function index(i, j) {
   return i + j * cols;
 }
 
-  
+// Fine item, splice it
 function removeFromArray(arr, elt) {
-  // Fine item, splice it
   for (var k = arr.length - 1; k >= 0; k--) {
     if (arr[k] == elt) {
       arr.splice(k, 1);
@@ -293,9 +298,8 @@ function removeFromArray(arr, elt) {
   }
 }
 
-
+// Find which wall to remove 
 function removeWalls(a, b) {
-  // Find which wall to remove 
   var x = a.i - b.i;
   if (x === 1) {
     a.walls[3] = false;
