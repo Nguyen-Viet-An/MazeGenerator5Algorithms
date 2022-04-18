@@ -1,5 +1,3 @@
-var visited = [];
-var frontier = [];
 var t = 0;
 var cells = [];
 var cols, rows;
