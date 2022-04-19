@@ -1,5 +1,7 @@
 # Maze Generator (5 algorithms)
 
+Visit the browser version here: https://nguyen-viet-an.github.io/MazeGenerator5Algorithms/
+
 # Description
 
 A maze generator that generates maze using 5 different algorithms.
