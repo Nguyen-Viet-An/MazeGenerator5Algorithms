@@ -16,7 +16,7 @@ The 5 algorithms implemented are: Recursive Backtracking, Binary Tree, Aldous-Br
 - The algorithm ends when the process has backed all the way up to the starting point.
 
 2. Binary Tree (the easiest!)
-For every cell in the grid, randomly carve a passage either north (top), or east (right).
+- For every cell in the grid, randomly carve a passage either north (top), or east (right).
 
 3. Aldous-Broder
 - Choose a cell, again, I chose the first cell of the grid.
